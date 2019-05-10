@@ -59,3 +59,7 @@ typings/
 
 # next.js build output
 .next
+yarn.lock
+.DS_Store
+/lib/api/.DS_Store
+/lib/.DS_Store
