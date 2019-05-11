@@ -2,8 +2,6 @@ import React from "react";
 import ReactDOM from 'react-dom'
 import { combineReducers, configureStore, getDefaultMiddleware } from "redux-starter-kit";
 import { connect, Provider } from "react-redux";
-import { persistStore, persistReducer } from 'redux-persist'
-import { PersistGate } from 'redux-persist/integration/react'
 
 import '../scss/style.scss';
 import App from "./app";

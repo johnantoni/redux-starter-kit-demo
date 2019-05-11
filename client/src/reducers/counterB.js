@@ -1,5 +1,4 @@
 import { createSlice } from "redux-starter-kit";
-
 import { addFive } from "./counterA";
 
 const counterSliceB = createSlice({

@@ -46,7 +46,6 @@
     "node-sass": "^4.11.0",
     "react-redux": "^7.0.2",
     "react-testing-library": "^6.0.4",
-    "redux-persist": "^5.10.0",
     "redux-starter-kit": "^0.4.3",
     "redux-thunk": "^2.3.0",
     "sass-loader": "^7.1.0",

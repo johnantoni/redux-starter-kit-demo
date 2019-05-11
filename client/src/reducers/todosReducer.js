@@ -15,8 +15,6 @@ const {actions, reducer : todosReducer} = createSlice({
   }
 });
 
-export default todosReducer
-
 export const { loadTodos, newTodo } = actions
 
 export const fetchTodos = () => async (dispatch) => {
@@ -36,3 +34,5 @@ export const fetchNewTodo = () => async (dispatch) => {
     console.log(error)
   }
 }
+
+export default todosReducer
