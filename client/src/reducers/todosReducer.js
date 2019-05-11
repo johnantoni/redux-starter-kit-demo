@@ -20,32 +20,19 @@ export default todosReducer
 export const { loadTodos, newTodo } = actions
 
 export const fetchTodos = () => async (dispatch) => {
-   const todos = await fetch("/p1/todos")
-   .then(resp => resp.json())
-   .then(resp => {
-     dispatch(loadTodos(resp))
-   })
-   .catch(error => {
-     console.log(error)
-   })
+  try {
+    const records = await fetch("/p1/todos").then(res => res.json())
+    dispatch(loadTodos(records))
+  } catch(error) {
+    console.log(error)
+  }
 }
 
 export const fetchNewTodo = () => async (dispatch) => {
-   const todos = await fetch("/p1/todos/new")
-   .then(resp => resp.json())
-   .then(resp => {
-     dispatch(newTodo(resp))
-   })
-   .catch(error => {
-     console.log(error)
-   })
+  try {
+    const record = await fetch("/p1/todos/new").then(res => res.json())
+    dispatch(newTodo(record))
+  } catch(error) {
+    console.log(error)
+  }
 }
-
-// export const fetchTodos = () => async (dispatch) => {
-//   try {
-//     const todos = await fetch("/p1/todos")
-//     dispatch(loadTodos(todos))
-//   } catch(error) {
-//     console.log(error)
-//   }
-// }
